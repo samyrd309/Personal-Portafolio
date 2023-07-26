@@ -1,0 +1,238 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 1000; /* Ensure the navbar stays above other elements */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .welcome {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15vh; /* Add margin top to account for fixed navbar height */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Project Cards Styling */
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .project-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    width: 28.5%;
+    z-index: 1; /* Ensure the card stays below the navbar */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .project-card p {
+    margin: 0.5rem 0;
+    color: #666;
+  }
+  
+  .project-card a {
+    display: block;
+    text-align: center;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 300px;
+    background-color: #f2f2f2; /* Gray background for empty image */
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Education Section Styling */
+  #education {
+    background-color: #f8f8f8;
+    padding: 2rem 0;
+  }
+  
+  #education .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Apply the same style for all other section titles */
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .education-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  .education-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .education-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .education-item h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+  }
+  
+  .education-item p {
+    margin: 0.5rem 0;
+    color: #666;
+  }
+  
+  /* Media Query for Responsive Layout */
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 1rem;
+    }
+  
+    nav {
+      justify-content: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 0.5rem 0;
+    }
+  
+    .welcome {
+      min-height: 60vh; /* Adjust the height for mobile devices */
+      margin-top: 120px; /* Adjust margin-top for better visibility */
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    .project-list {
+      flex-direction: column;
+    }
+  
+    .project-card {
+      width: 100%;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  /* End of CSS Code */
+  
